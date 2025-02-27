@@ -1,9 +1,7 @@
 name: Scan PR Title
 
 on:
-  pull_request:
-    branches: [ main ]
-    types: [ opened, edited, synchronize, reopened ]
+  workflow_call:
 
 jobs:
   check-pull-request-title:
